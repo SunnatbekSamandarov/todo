@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Task</title>
+</head>
+<body>
+        <h1>Add Todo list </h1>
+            <form  method="post" >
+                {% csrf_token %}
+                  {{ forms.as_p }}
+                  <button type="submit">Create</button>
+            </form>
+</body>
+</html>
